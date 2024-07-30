@@ -7,27 +7,35 @@
 </head>
 <body> 
     <h1>Minha Calculadora</h1>
-    <button id="1">1</button>
-    <button id="2">2</button>
-    <button id="3">3</button>
-    <button id="4">4</button>
-    <button id="5">5</button>
-    <button id="6">6</button>
-    <button id="7">7</button>
-    <button id="8">8</button>
-    <button id="9">9</button>
-    <button id="0">0</button>
+    <div id="displayDiv"></div>
+    <div id="keysDiv">
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <button id="0">0</button>
 
-    <button id="Apagar"     >C</button>
-    <button id="Limpar"     >AC</button>
-    <button id="dividir"    >/</button>
-    <button id="multiplicar">*</button>
-    <button id="subtrair"   >-</button>
-    <button id="somar"      >+</button>
-    <button id="igual"      >=</button>
+    </div>
     
+
+
+    <button class="operatorKeys" data-action="dividir"    >/</button>
+    <button class="operatorKeys" data-action="multiplicar">*</button>
+    <button class="operatorKeys" data-action="subtrair"   >-</button>
+    <button class="operatorKeys" data-action="somar"      >+</button>
+    <button class="keyEqual"  data-action="igual"      >=</button>
+
+    <button data-action="Apagar"     >C</button>
+    <button data-action="Limpar"     >AC</button>
+
     <p id="result"></p>
 
     <footer>Calculadora desenvolvida para o aprendizado de HTML, CSS e JavaScript</footer>
+    <script src="javascript.js"></script>
 </body>
 </html>

@@ -1,16 +1,23 @@
-var number1 = document.getElementById('1');
-var number2 = document.getElementById('2');
-var number3 = document.getElementById('3');
-var number4 = document.getElementById('4');
-var number5 = document.getElementById('5');
-var number6 = document.getElementById('6');
-var number7 = document.getElementById('7');
-var number8 = document.getElementById('8');
-var number9 = document.getElementById('9');
-var number0 = document.getElementById('0');
+var buttonnumber1 = document.getElementById('1');
+var buttonnumber2 = document.getElementById('2');
+var buttonnumber3 = document.getElementById('3');
+var buttonnumber4 = document.getElementById('4');
+var buttonnumber5 = document.getElementById('5');
+var buttonnumber6 = document.getElementById('6');
+var buttonnumber7 = document.getElementById('7');
+var buttonnumber8 = document.getElementById('8');
+var buttonnumber9 = document.getElementById('9');
+var button,number0 = document.getElementById('0');
 //var number = document.getElementById('');
 
-let operator1 =0, operator2=0, resultBuffer =0;
+let operator1 ='', operator2='', resultBuffer ='';
+
+
+var keysNumbers = document.getElementById('keysDiv');
+keysNumbers.addEventListener('click', e => {
+    console.log(e.target)
+})
+
 
 var buttonsomar = document.getElementById('somar');
 buttonsomar.onclick = function(){
