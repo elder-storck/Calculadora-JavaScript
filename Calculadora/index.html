@@ -4,34 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <!--<link rel="stylesheet" href="style.css">-->
 </head>
 <body> 
-    <h1>Minha Calculadora</h1>
-    <div id="displayDiv"></div>
-    <div id="keysDiv">
-            <button id="1">1</button>
-            <button id="2">2</button>
-            <button id="3">3</button>
-            <button id="4">4</button>
-            <button id="5">5</button>
-            <button id="6">6</button>
-            <button id="7">7</button>
-            <button id="8">8</button>
-            <button id="9">9</button>
-            <button id="0">0</button>
-
+    <div class="calculator">
+        <div id="displayDiv">0</div>
+        <div id="keysDiv">
+                <button data-action="Limpar"     >AC</button>
+                <button class="operatorKeys" data-action="somar"      >+</button>
+                <button class="operatorKeys" data-action="subtrair"   >-</button>
+                <button class="operatorKeys" data-action="dividir"    >/</button>
+                <button id="1">1</button>
+                <button id="2">2</button>
+                <button id="3">3</button>
+                <button class="operatorKeys" data-action="multiplicar">*</button>
+                <button id="4">4</button>
+                <button id="5">5</button>
+                <button id="6">6</button>
+                <button class="keyEqual"     data-action="igual"      >=</button>
+                <button id="7">7</button>
+                <button id="8">8</button>
+                <button id="9">9</button>
+                <button id="0">0</button>
+                
+                
+                
+                
+                
+                
+                
+        </div>
     </div>
+
+
     
 
-
-    <button class="operatorKeys" data-action="dividir"    >/</button>
-    <button class="operatorKeys" data-action="multiplicar">*</button>
-    <button class="operatorKeys" data-action="subtrair"   >-</button>
-    <button class="operatorKeys" data-action="somar"      >+</button>
-    <button class="keyEqual"  data-action="igual"      >=</button>
-
-    <button data-action="Apagar"     >C</button>
-    <button data-action="Limpar"     >AC</button>
+    
 
     <p id="result"></p>
 

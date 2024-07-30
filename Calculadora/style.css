@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #7a7777;
+}
+.calculator{
+    width: 400px;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+
+}
+#displayDiv{
+    width: 380px;
+    height: 70px;
+    margin: 10px;
+    align-content: center;
+    background-color: azure;
+
+}
+#keysDiv{
+    padding: auto;
+    margin: 10px;
+    align-items: center;
+}
+button{
+    width: 90px;
+    height: 90px;
+    
+}
+.keyEqual{
+    height: 90px;
+}
