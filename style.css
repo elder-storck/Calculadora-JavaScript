@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #1175d3;
+}
+.calculator{
+    width: 395px;
+    height: 580px;
+    /*align-items: center;*/
+    margin: 30px;
+    padding-top: 10px;
+    background-color: black;
+}
+#displayDiv{
+    width: 355px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 0px;
+    padding: 10px;
+    font-size: xx-large;
+    /*align-content: center;*/
+    background-color: azure;
+
+}
+#keysDiv{
+    background-color: black;
+    margin: 10px;
+    padding: 0px;
+
+}
+.equal{
+    height: 180px;
+}
+button{
+    width: 90px;
+    height: 90px;
+    font-size: xx-large;
+    margin-top: 4px;
+}
+button.orangeKeys.equal{
+    height: 180px;
+    background-color: red;
+}
+.number{
+    color: black;
+    background-color: rgb(116, 116, 116);
+}
+.operatorKeys{
+    color: black;
+    background-color: rgb(202, 194, 194);
+}
+.orangeKeys{
+    background-color: orange;
+    color: black;
+}
