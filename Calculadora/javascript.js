@@ -10,12 +10,14 @@
 // var button,number0 = document.getElementById('0');
 // //var number = document.getElementById('');
 
-let operator1 ='', operator2='', resultBuffer ='';
+let operator1 =0, operator2=0, resultBuffer =0;
 
 
 var keys = document.getElementById('keysDiv');
 var display = document.getElementById('displayDiv')
 
+let keyPreviousAction = false;
+let action = '';
 
 
 keys.addEventListener('click', e => {
@@ -26,34 +28,51 @@ keys.addEventListener('click', e => {
     const displayedNum = display.textContent
 
     if(!keyAction){
-        if(display.textContent === '0' || ){
+        if(display.textContent === '0'){
             display.textContent = key.textContent;
-        }else{
+        }else if(keyPreviousAction) {
+            display.textContent = key.textContent;
+        } else {
             display.textContent = display.textContent + key.textContent;
         }
+        keyPreviousAction = false;
+
+        
     }
     if(keyAction){
         switch(keyAction){
             case 'dividir':
                 display.textContent = '/';
+
+                keyPreviousAction = true;
                 break;
             case 'multiplicar':
                 display.textContent = '*';
+                keyPreviousAction = true;
                 break;
             case 'subtrair':
                 display.textContent = '-';
+                keyPreviousAction = true;
                 break;
             case 'somar':
+                operator1 = parseFloat(display.textContent);
                 display.textContent = '+';
+                action = 'somar'
+                keyPreviousAction = true;
                 break;
             case 'igual':
-                display.textContent = '=';
+                
+                if(action === 'somar'){
+                    operator2 = parseFloat(display.textContent);
+                    display.textContent = operator1 + operator2;    
+                }
+                keyPreviousAction = true;
                 break;
             case 'apagar':
                 display.textContent = 'ERROR';
                 break;
             case 'limpar':
-                display.textContent = 'ERROR';
+                display.textContent = '0'
                 break;
         }
     }else{
