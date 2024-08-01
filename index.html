@@ -5,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
-</head>
+</head> 
 <body> 
+    <main>
     <div class="calculator">
         <div id="displayDiv">0</div>
         <div id="keysDiv">
+            <div class="lightGrayKeys">
                 <button class="operatorKeys" data-action="somar"      >+</button>
                 <button class="operatorKeys" data-action="subtrair"   >-</button>
                 <button class="operatorKeys" data-action="multiplicar">*</button>
                 <button class="operatorKeys" data-action="dividir"    >/</button>
-                <button class="number">1</button>
-                <button class="number">2</button>
-                <button class="number">3</button>
-                <button class="orangeKeys" data-action="limpar" >AC</button>
-                <button class="number">4</button>
-                <button class="number">5</button>
-                <button class="number">6</button>
-                <button class="equal" data-action="igual" >=</button>
-                <button class="number">7</button>
-                <button class="number">8</button>
-                <button class="number">9</button>
-                
-                <button class="number" data-action="signal">+/-</button>
-                <button class="number">0</button>
-                <button class="number" data-action="decimal">.</button>
+            </div>
+            <div class="keys">
+            <div class="darkGrayKeys">
+                <button class="darkGrayButton">1</button>
+                <button class="darkGrayButton">2</button>
+                <button class="darkGrayButton">3</button>
+                <button class="darkGrayButton">4</button>
+                <button class="darkGrayButton">5</button>
+                <button class="darkGrayButton">6</button>
+                <button class="darkGrayButton">7</button>
+                <button class="darkGrayButton">8</button>
+                <button class="darkGrayButton">9</button>
+                <button class="darkGrayButton" data-action="signal">+/-</button>
+                <button class="darkGrayButton">0</button>
+                <button class="darkGrayButton" data-action="decimal">.</button>
+            </div>
+            <div class="orangeKeys">
+                <button class="operatorKeys"  data-action="limpar" >AC</button>
+                <button id="equal" data-action="igual" >=</button>
+            </div>
+        </div>
                 
                 
                 
@@ -38,14 +46,7 @@
                 
         </div>
     </div>
-
-
-    
-
-    
-
-    <p id="result"></p>
-
+</main>
     <footer>Calculadora desenvolvida para o aprendizado de HTML, CSS e JavaScript</footer>
     <script src="javascript.js"></script>
 </body>
